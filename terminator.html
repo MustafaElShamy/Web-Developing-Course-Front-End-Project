@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <title>The Terminator (1995)</title>
+  <script>
+
+    var button = document.getElementById("rent"), count = 0;
+    button.addEventListener("click", output, false);
+    function output() {
+      var rent = document.getElementById("rentsuccess");
+      if (count < 3) {
+        rent.innerHTML = "Rent Succesffully";
+        rent.style.color = "green";
+        count++;
+      }
+      else {
+        rent.innerHTML = "You reached your rent limit";
+        rent.style.color = "red";
+      }
+
+    }
+  </script>
+</head>
+
+<body>
+  <!-----Beginning of Navigation Bar--->
+  <nav class="navbar transparent navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+  <div class="collapse navbar-collapse" id="navbarNav">
+  <ul class="navbar-nav">
+    <a class="navbar-brand" href="#">
+   <img class="navimg" width="30px" height="30px"src="images/870910.png">
+  </a>
+  </ul>
+  <ul class="navbar-nav active">
+      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+    </ul>
+    <ul class="navbar-nav">
+      <a class="nav-link" href="browse.html">Browse Movies</a>
+    </li>
+  </ul>
+    <ul class="navbar-nav">
+      <a class="nav-link" href="contact-us-logged.html">Contact Us</a>
+    </ul>
+    <ul class="navbar-nav">
+      <a class="nav-link" href="aboutlogged.html">About</a>
+    </li>
+  </ul>
+  <ul class="navbar-nav">
+    <a class="nav-link" href="profile.html">Profile</a>
+  </ul>
+    <ul class="navbar-nav ml-auto">
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      <li>
+        <a class="nav-link" href="profile.html">Mustafa</a>
+    </li>
+    <li>
+      <a class="nav-link" href="index.html">Logout</a>
+    </li>
+    </ul>
+  </div>
+  </div>
+  </nav>
+  <!---End of Navigation Bar--->
+    <div class="container mt-5">
+    <div class="row align-items-center">
+      <div class="col-sm">
+        <img class="align-self-start mr-3" src="images/posters/Terminator.jpg" alt="Generic placeholder image"
+          height="600px">
+      </div>
+      <div class="col-sm">
+        <h3 class="text-light"> The Terminator (1995)</h3>
+        <h6 class="text-light"> Genre: Action/Thriller</h6>
+        <p class="text-light"> Starring Arnold Schwarzenegger as the Terminator, a cyborg assassin sent back in time
+          from 2029 to 1984 to kill Sarah Connor (Linda Hamilton), whose son will one day become a savior against
+          machines in a post-apocalyptic future.</p>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/k64P4l2Wmeg"
+            allowfullscreen></iframe>
+        </div>
+        <a class="btn btn-danger stretched-link w-50 mt-5 text-light" id="rent" onclick="output()">Rent Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+      </div>
+      <div class="col-sm mt-1" id="rentsuccess"></div>
+    </div>
+  </div>
+  <!-- Start of Footer -->
+  <footer class="page-footer font-small blue fixed-bottom">
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+      <a href="https://fue.edu.eg/"> Netflix@FUE</a>
+    </div>
+  <!-- End of Footer -->
+</body>
+</html>
